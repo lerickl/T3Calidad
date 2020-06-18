@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Confirmar";
+}
+
+<h2 id="Confirmar">Confirmar</h2>
+
+<h3>¿Seguro desea iniciar el examen de @Model.Tema.Nombre ? </h3>
+<h3>Creado por @Model.Usuario.Nombres</h3>
+
+<a class="btn btn-danger"id="buttoniniciarExamen" href="/Home/DarExamen?ExamenId=@Model.Id">Iniciar</a>
+<a class="btn btn-link" id="buttonCancelarExamen"  href="/home/index">Cancelar</a>
